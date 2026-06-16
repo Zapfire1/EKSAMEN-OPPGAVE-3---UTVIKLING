@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT-Hendelser Helse-Stasjon</title>
-    <Link rel="stylesheet" href="/static/style.css"></Link>
+    <title>IT-hendelser Helse-Stasjon</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    
+
+    <div class="Header">
+        <a href="hendelser.html" class="button">Hendelser</a>
+    </div>
+    <h1>Registrer hendelse</h1>
+
+   <input type="text" id="navnInput" placeholder="Skriv navn">
+
+   <input type="text" id="AvdelingInput" placeholder="Skriv Avdeling">
+
+   <select id="KategoriInput">
+    <option>Kategori</option>
+    <option>Nettverk</option>
+    <option>Maskinvare</option>
+    <option>Programvare</option>
+    <option>Konto/Tilgang</option>
+</select>
+
+   <select id="PrioritetInput">
+    <option>Prioritet</option>
+    <option>Lav</option>
+    <option>Middels</option>
+    <option>Høy</option>
+</select>  
+
+   <input type="text" id="BeskrivelseInput" placeholder="Beskriv Hendelsen">
+   
+   <button id="saveBtn">Registrer sak</button>
+
+    <script type="module" src="/js/registrering.js"></script>
 </body>
 </html>
